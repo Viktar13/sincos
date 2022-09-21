@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор рознай фігні</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="calc-wrapper">
+        <div class="container">
+            <form id="form">
+                <div class="heading">
+                    <h1 class="heading-title">Арыфметычныя рашэнні</h1>
+                    <p class="heading-desc">Просценькі калькулятар для вучобы</p>
+                </div>
+
+               <div class="blocks">
+                    <div class="calc-action">
+                        <h2 class="h2">Addition, subtraction,multiplication, division</h2>
+
+
+                            <div class="inter">
+                                <input class="input" id="numA" name="a" type="number" value="0">
+                            </div>
+
+                            <div class="radio_button">
+
+                                <input type="radio" class="action_choose" id="plus" name="action" checked />
+                                <label for="plus">+</label>
+
+                                <input type="radio" class="action_choose" id="subtraction" name="action"/>
+                                <label for="subtraction">-</label>
+
+                                <input type="radio" class="action_choose" id="multiplication" name="action">
+                                <label for="multiplication">*</label>
+
+                                <input type="radio" class="action_choose" id="division" name="action" value="/">
+                                <label for="division">/</label>
+
+                            </div>
+
+                            <div class="inter">
+                                <input class="input" id="numB" name="b" type="number" value="0">
+                            </div>
+
+                            <div class="radio_button">=</div>
+
+                            <div class="inter">
+                                <output class="input output" id="output"   name="result" value="0">0</output>
+                            </div>
+                    </div>
+
+                    <div class="sin_cos">
+                        <h2>Looking for the sine or cosine of an angle</h2>
+                            <div>
+                                <input type="radio" class="action_choose sin_cos" id="sin" name="coss">
+                                <label for="sin">sinus</label>
+
+                                <input type="radio" class="action_choose sin_cos" id="cos" name="coss">
+                                <label for="coss">cosin</label>
+                            </div>
+
+                            <div class="inter">
+                                <input class="input" name="c" type="number" value="0">
+                            </div>
+
+                            <div class="inter">
+                                <output class="input output" name="result" value="0">0</output>
+                            </div>
+                    </div>
+
+<!-- ============================================ -->
+
+                    <!-- <div class="sin_cos 2">
+                        <h2>Looking for the sine or cosine of an angle</h2>
+                            <div>
+                                <input type="radio" class="action_choose" id="sin" name="coss">
+                                <label for="sin">sinus</label>
+
+                                <input type="radio" class="action_choose" id="cos" name="coss">
+                                <label for="coss">cosin</label>
+                            </div>
+
+                            <div class="inter">
+                                <input class="input" name="c" type="number" value="0">
+                            </div>
+
+                            <div class="inter">
+                                <output class="input output" name="result" value="0">0</output>
+                            </div>
+                    </div> -->
+
+                    <!-- ================================== -->
+
+                                       <!-- <div class="sin">
+                        <form oninput="result.value=Math.sin(a.value*(Math.PI/180) )"> Сінус вугла.
+                            <input class="input" name="a" type="number" value="0"> =
+                            <output class="input" name="result" value="0">0</output>g
+                            
+                        </form>
+                    </div> -->
+
+                    <!-- Падлічваем складанне, памнажэнне і інш. -->
+                    <!-- <div class="calc-action">
+                        <h2 class="h2">Addition, subtraction,multiplication, division</h2>
+                        <input class="input" name="a" type="number" value="0">
+                        <div>
+                            <label class="radio-wrapper">Choose an action</label>
+                        </div>
+                        <input class="input" name="b" type="number" value="0"> =
+                        <output class="input" name="result" value="0">0</output>
+                    </div> -->
+                    <!-- Падлічваем складанне, памнажэнне і інш. -->
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+ <!-- <oninput="result.value=parseInt(a.value)+parseInt(b.value)"> -->
